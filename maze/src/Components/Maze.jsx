@@ -46,6 +46,37 @@ export const Maze = () => {
     };
   }, []);
 
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      switch (event.key) {
+        case "ArrowLeft":
+          left();
+          break;
+        case "ArrowRight":
+          right();
+          break;
+        case "ArrowUp":
+          up();
+          break;
+        case "ArrowDown":
+          down();
+          break;
+        default:
+          break;
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [position, recentCommand]);
+  
+
+
+
   function right() {
     setPosition((prevPos) => ({
       ...prevPos,
@@ -75,8 +106,19 @@ export const Maze = () => {
   }
 
   function getStepSize() {
-    return 40;
+    return 70;
   }
+
+
+  const numRows = 7;
+  const numCols = 7;
+
+  const redDivSize = {
+    width: `${(100 / numCols).toFixed(2)}%`,
+    height: `${(100 / numRows).toFixed(2)}%`,
+  };
+
+  console.log(redDivSize)
 
   return (
     <div
@@ -162,8 +204,9 @@ export const Maze = () => {
 
         <div
           style={{
-            width: "50px",
-            height: "50px",
+            ...redDivSize,
+            width: "14.29%",
+            height: "14.29%",
             position: "absolute",
             // border : "1px solid red",
             top: `${position.y}px`,
@@ -172,10 +215,10 @@ export const Maze = () => {
             display : "flex",
             justifyContent:"center",
             alignItems : "center",
-            transform: "translate(20%, 20%)",
+            // transform: "translate(20%, 20%)",
           }}
         >
-          <img style = {{height : "100%"}} src="https://freepngimg.com/thumb/categories/1130.png" alt="" />
+          <img style = {{height : "85%"}} src="https://freepngimg.com/thumb/categories/1130.png" alt="" />
         </div>
       </div>
       <div style={{fontSize : "40px", marginTop : "40px"}} >Teachable Machine Audio Model</div>
