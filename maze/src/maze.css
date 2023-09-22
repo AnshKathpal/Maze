@@ -35,3 +35,69 @@
     border-right: none;
     border-bottom: none;
 }
+
+.mazeBox:nth-child(30){
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.mazeBox:nth-child(31){
+    border-left: none;
+    border-right: none;
+}
+
+.mazeBox:nth-child(32){
+    border-left: none;
+    border-right: none;
+}
+
+.mazeBox:nth-child(33){
+    border-left: none;
+    border-top: none;
+}
+
+
+.mazeBox:nth-child(26){
+    border-right: none;
+    border-bottom: none;
+}
+
+.mazeBox:nth-child(27){
+    border-left: none;
+    border-bottom: none;
+}
+
+.mazeBox:nth-child(34){
+    border-top: none;
+    border-right: none;
+}
+
+.mazeBox:nth-child(35){
+    border-left: none;
+    border-bottom: none;
+}
+
+.mazeBox:nth-child(42){
+    border-top: none;
+    border-left: none;
+}
+
+.mazeBox:nth-child(41){
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.mazeBox:nth-child(48){
+    border-top: none;
+    border-right: none;
+}
+
+.mazeBox:nth-child(49){
+    border-right: none;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
