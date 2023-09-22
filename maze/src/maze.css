@@ -95,7 +95,6 @@
 }
 
 .mazeBox:nth-child(49){
-    border-right: none;
     border-left: none;
     display: flex;
     justify-content: center;

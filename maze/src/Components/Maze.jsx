@@ -82,11 +82,11 @@ export const Maze = () => {
     <div
       style={{
         width: "100%",
-        height: "100vh",
+        height: "85vh",
         display: "flex",
         flexDirection: "column", 
         alignItems: "center",
-        justifyContent : "center"
+        justifyContent : "center",
       }}
     >
       <h1>Mario Maze</h1>
@@ -178,6 +178,7 @@ export const Maze = () => {
           <img style = {{height : "100%"}} src="https://freepngimg.com/thumb/categories/1130.png" alt="" />
         </div>
       </div>
+      <div style={{fontSize : "40px", marginTop : "40px"}} >Teachable Machine Audio Model</div>
     </div>
   );
 };
