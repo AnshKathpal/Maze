@@ -1,0 +1,37 @@
+.mazeBox{
+    border : 1px solid blue;
+}
+
+.mazeBox:nth-child(1){
+    border-right: none;
+}
+
+.mazeBox:nth-child(2){
+    border-left: none;
+    border-bottom: none;
+}
+
+.mazeBox:nth-child(9){
+    border-top : none;
+    border-right: none;
+}
+
+.mazeBox:nth-child(10){
+    border-left: none;
+    border-bottom: none;
+}
+
+.mazeBox:nth-child(17){
+    border-top: none;
+    border-bottom: none;
+}
+
+.mazeBox:nth-child(24){
+    border-top: none;
+    border-left: none;
+}
+
+.mazeBox:nth-child(23){
+    border-right: none;
+    border-bottom: none;
+}
