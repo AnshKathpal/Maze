@@ -4,7 +4,7 @@ import queen from "../images/queen.png"
 
 export const Maze = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [recentCommand, setRecentCommand] = useState(""); // State to store the recent command
+  const [recentCommand, setRecentCommand] = useState("");
 
   useEffect(() => {
     // Register the voice command event listener
