@@ -19,6 +19,13 @@ MarioMaze is an interactive web application where you control Mario's movements 
 ### Integration
 - **Teachable Machine**: The app integrates Teachable Machine to recognize and respond to voice commands for Mario's movements.
 
+
+<img width="1680" alt="Screenshot 2023-10-21 at 3 22 23 AM" src="https://github.com/AnshKathpal/Maze/assets/115460552/dd09fe20-6dd7-4025-b97b-d247b26d92c1">
+
+<img width="1680" alt="Screenshot 2023-10-21 at 3 22 57 AM" src="https://github.com/AnshKathpal/Maze/assets/115460552/9778954d-d2d4-4f0c-b314-7c8c62091de7">
+
+<img width="1680" alt="Screenshot 2023-10-21 at 3 23 12 AM" src="https://github.com/AnshKathpal/Maze/assets/115460552/d2dde88c-66c3-4f38-b6ba-d9c94be38ed1">
+
 ## Installation and Setup
 1. Clone the repository from GitHub.
 
