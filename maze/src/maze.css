@@ -1,5 +1,5 @@
 .mazeBox{
-    border : 1px solid blue;
+    border : 3px double brown;
 }
 
 .mazeBox:nth-child(1){
