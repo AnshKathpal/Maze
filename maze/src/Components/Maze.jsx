@@ -11,7 +11,61 @@ export const Maze = () => {
   useEffect(() => {
     // Register the voice command event listener
     const handleVoiceCommandRecognized = (event) => {
+
+
+      const VoiceConditionMap = {
+        "0,0,Left": true,
+        "0,0,Up": true,
+        "0,0,Down": true,
+        "70,0,Right": true,
+        "70,0,Up": true,
+        "70,70,Left": true,
+        "70,70,Down": true,
+        "140,70,Right": true,
+        "140,70,Up": true,
+        "140,140,Left": true,
+        "140,140,Right": true,
+        "140,210,Right": true,
+        "140,210,Down": true,
+        "70,210,Up": true,
+        "70,210,Left": true,
+        "70,280,Down": true,
+        "140,280,Down": true,
+        "140,280,Up": true,
+        "210,280,Up": true,
+        "210,280,Down": true,
+        "280,280,Right": true,
+        "280,280,Down": true,
+        "280,210,Left": true,
+        "280,210,Up": true,
+        "350,210,Up": true,
+        "350,210,Right": true,
+        "350,280,Left": true,
+        "350,280,Down": true,
+        "420,280,Up": true,
+        "420,280,Right": true,
+        "420,350,Right": true,
+        "420,350,Down": true,
+        "350,350,Up": true,
+        "350,420,Left": true,
+        "350,420,Down": true,
+        "420,420,Right": true,
+        "420,420,Down": true,
+        "420,420,Up": true,
+      };
+
+
+      // Check if the condition exists in the map
+      
+      
       const recognizedCommand = event.detail;
+      
+      
+      const conditionKey = `${position.x},${position.y},${recognizedCommand}`;
+      
+      if (VoiceConditionMap[conditionKey]) {
+        return;
+      }
       console.log("Recognized Command:", recognizedCommand);
 
       // Update the recent command state
@@ -46,7 +100,7 @@ export const Maze = () => {
         handleVoiceCommandRecognized
       );
     };
-  }, []);
+  }, [position]);
 
   console.log("check Position", position);
 
@@ -101,7 +155,6 @@ export const Maze = () => {
         "280,210,ArrowUp": true,
         "350,210,ArrowUp": true,
         "350,210,ArrowRight": true,
-        // "350,210,ArrowLeft": true,
         "350,280,ArrowLeft": true,
         "350,280,ArrowDown": true,
         "420,280,ArrowUp": true,
