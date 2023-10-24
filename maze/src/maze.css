@@ -1,102 +1,378 @@
-.mazeBox{
-    border : 3px double brown;
+.mazeBox {
+  border: 3px double brown;
 }
 
-.mazeBox:nth-child(1){
-    border-right: none;
+.mazeBox:nth-child(1) {
+  border-right: none;
 }
 
-.mazeBox:nth-child(2){
+.mazeBox:nth-child(2) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.mazeBox:nth-child(9) {
+  border-top: none;
+  border-right: none;
+}
+
+.mazeBox:nth-child(10) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.mazeBox:nth-child(17) {
+  border-top: none;
+  border-bottom: none;
+}
+
+.mazeBox:nth-child(24) {
+  border-top: none;
+  border-left: none;
+}
+
+.mazeBox:nth-child(23) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.mazeBox:nth-child(30) {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.mazeBox:nth-child(31) {
+  border-left: none;
+  border-right: none;
+}
+
+.mazeBox:nth-child(32) {
+  border-left: none;
+  border-right: none;
+}
+
+.mazeBox:nth-child(33) {
+  border-left: none;
+  border-top: none;
+}
+
+.mazeBox:nth-child(26) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.mazeBox:nth-child(27) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.mazeBox:nth-child(34) {
+  border-top: none;
+  border-right: none;
+}
+
+.mazeBox:nth-child(35) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.mazeBox:nth-child(42) {
+  border-top: none;
+  border-left: none;
+}
+
+.mazeBox:nth-child(41) {
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.mazeBox:nth-child(48) {
+  border-top: none;
+  border-right: none;
+}
+
+.mazeBox:nth-child(49) {
+  border-left: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maze2Box {
+  border: 3px double brown;
+
+
+  @media all and (max-width: 480px) {
+    border: 3px double brown;
+  }
+}
+
+.maze2Box:nth-child(1) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.maze2Box:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.maze2Box:nth-child(3) {
+  border-left: none;
+  border-bottom: none;
+}
+
+
+.maze2Box:nth-child(10) {
+  border-top: none;
+  border-bottom: none;
+}
+
+.maze2Box:nth-child(12) {
+  border-top: none;
+  border-right: none;
+}
+
+.maze2Box:nth-child(13) {
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+
+.maze2Box:nth-child(14) {
     border-left: none;
+
+
+  }
+
+
+  .maze2Box:nth-child(16) {
+
     border-bottom: none;
-}
 
-.mazeBox:nth-child(9){
-    border-top : none;
-    border-right: none;
-}
+  }
 
-.mazeBox:nth-child(10){
-    border-left: none;
-    border-bottom: none;
-}
+  .maze2Box:nth-child(19) {
 
-.mazeBox:nth-child(17){
     border-top: none;
-    border-bottom: none;
-}
-
-.mazeBox:nth-child(24){
-    border-top: none;
-    border-left: none;
-}
-
-.mazeBox:nth-child(23){
     border-right: none;
-    border-bottom: none;
-}
-
-.mazeBox:nth-child(30){
-    border-top: none;
-    border-right: none;
-    border-left: none;
-}
-
-.mazeBox:nth-child(31){
-    border-left: none;
-    border-right: none;
-}
-
-.mazeBox:nth-child(32){
-    border-left: none;
-    border-right: none;
-}
-
-.mazeBox:nth-child(33){
-    border-left: none;
-    border-top: none;
-}
+  }
 
 
-.mazeBox:nth-child(26){
-    border-right: none;
-    border-bottom: none;
-}
-
-.mazeBox:nth-child(27){
-    border-left: none;
-    border-bottom: none;
-}
-
-.mazeBox:nth-child(34){
-    border-top: none;
-    border-right: none;
-}
-
-.mazeBox:nth-child(35){
-    border-left: none;
-    border-bottom: none;
-}
-
-.mazeBox:nth-child(42){
-    border-top: none;
-    border-left: none;
-}
-
-.mazeBox:nth-child(41){
-    border-right: none;
+  .maze2Box:nth-child(20) {
     border-bottom: none;
     border-left: none;
+  }
+
+
+
+
+.maze2Box:nth-child(21) {
+  border-right: none;
+  border-bottom: none;
 }
 
-.mazeBox:nth-child(48){
+.maze2Box:nth-child(22) {
+  border-top: none;
+  border-left: none;
+}
+
+.maze2Box:nth-child(25) {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .maze2Box:nth-child(29) {
+    border-bottom: none;
+    border-top: none;
+  }
+
+.maze2Box:nth-child(30) {
+  border-top: none;
+  border-right: none;
+}
+
+.maze2Box:nth-child(31) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.maze2Box:nth-child(34) {
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .maze2Box:nth-child(35) {
+    border-left: none;
+    border-right: none;
+  }
+
+  .maze2Box:nth-child(36) {
+    border-left: none;
+    border-bottom: none;
+  }
+
+  .maze2Box:nth-child(38) {
     border-top: none;
     border-right: none;
+  }
+
+  .maze2Box:nth-child(39) {
+    border-left: none;
+  }
+
+
+.maze2Box:nth-child(40) {
+  border-top: none;
+  border-bottom: none;
 }
 
-.mazeBox:nth-child(49){
+.maze2Box:nth-child(42) {
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .maze2Box:nth-child(43) {
     border-left: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-top: none;
+    border-right: none;
+  }
+
+  .maze2Box:nth-child(44) {
+    border-left: none;
+    border-bottom: none;
+  }
+
+
+  .maze2Box:nth-child(45) {
+    border-bottom: none;
+    border-top: none;
+  }
+
+
+
+.maze2Box:nth-child(48) {
+  border-right: none;
+}
+
+.maze2Box:nth-child(49) {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.maze2Box:nth-child(50) {
+  border-left: none; 
+  border-right: none;
+}
+
+.maze2Box:nth-child(51) {
+    border-left: none; 
+    border-top: none;
+
+  }
+
+
+  .maze2Box:nth-child(53) {
+    border-bottom: none;
+    border-top: none;
+
+  }
+
+  .maze2Box:nth-child(54) {
+    border-bottom: none;
+    border-top: none;
+
+  }
+
+  .maze2Box:nth-child(58) {
+    border-top: none; 
+    border-bottom: none;
+  }
+
+
+  .maze2Box:nth-child(61) {
+
+    border-right: none;  
+
+  }
+
+
+  .maze2Box:nth-child(62) {
+    border-top: none; 
+    border-left: none; 
+
+  }
+
+  .maze2Box:nth-child(63) {
+    border-top: none; 
+    border-bottom: none;
+  }
+
+  .maze2Box:nth-child(66) {
+    border-right: none; 
+  }
+
+
+  .maze2Box:nth-child(67) {
+    border-top: none; 
+    border-left: none; 
+  }
+
+  .maze2Box:nth-child(70) {
+    border-right: none; 
+    border-bottom: none;
+  }
+
+  .maze2Box:nth-child(71) {
+    border-right: none; 
+    border-left: none; 
+  }
+
+  .maze2Box:nth-child(72) {
+    border-top: none;   
+      border-left: none; 
+  }
+
+
+  .maze2Box:nth-child(79) {
+    border-top: none;   
+    border-right: none; 
+
+  }
+
+
+  .maze2Box:nth-child(80) {
+    border-left: none;  
+    border-right: none;  
+
+  }
+
+
+
+  .maze2Box:nth-child(81) {
+    border-left: none;   
+
+  }
+ 
+
+.mainDiv {
+  position: relative;
+  width: 40%;
+  height: 70vh;
+  border: 6px double brown;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+
+  @media all and (max-width: 480px) {
+    width: 90%;
+    height: 50dvh;
+    border: 4px double brown;
+  }
 }

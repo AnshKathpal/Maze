@@ -58,9 +58,9 @@ button {
     -->
 
     
-    <div class = "buttonStart" >
+    <!-- <div class = "buttonStart" >
       <button type="button"  id="startButton" onclick="init()">Start the Game</button>
-    </div>
+    </div> -->
     <div id="label-container"></div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
@@ -72,7 +72,16 @@ button {
         // the link to your model provided by Teachable Machine export panel
 
 
-        const URL = "https://teachablemachine.withgoogle.com/models/sJWTWVwHQ/";
+        const modelURL = "https://teachablemachine.withgoogle.com/models/sJWTWVwHQ/"; // Modify this URL
+      
+
+
+        // try {
+        //     const URL = "https://teachablemachine.withgoogle.com/models/sJWTWVwHQ/";
+        //     // const URL = "https://teachablemachine.withgoogle.com/models/4JUE_3iVi/";
+        // } catch (error) {
+        //     console.error("Error with the URL constructor:", error);
+        // }
         // const URL = "https://teachablemachine.withgoogle.com/models/4JUE_3iVi/";
 
     
@@ -81,8 +90,8 @@ button {
         let isActive = false;
 
         async function createModel() {
-            const checkpointURL = URL + "model.json"; // model topology
-            const metadataURL = URL + "metadata.json"; // model metadata
+            const checkpointURL = modelURL + "model.json"; // model topology
+            const metadataURL = modelURL + "metadata.json"; // model metadata
     
             recognizer = speechCommands.create(
                 "BROWSER_FFT", // fourier transform type, not useful to change
